@@ -1,0 +1,16 @@
+*~
+*.swp
+*.bak
+*.tmp
+ 
+# Java:
+build/
+out/
+*.class
+
+# idea
+.idea/
+*.iml
+
+#visual studio
+.vs/
