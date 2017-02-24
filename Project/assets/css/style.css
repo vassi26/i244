@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'futura';
     src: url('../fonts/Futura.ttf');
@@ -26,11 +25,21 @@
 	height: 70px;
 	width: 70px;
 	line-height: 70px;
+	}
 	/*
 	#FFC15E
 	#E56B70
 	*/
 
+
+.block:hover {
+	transform: translateY(-6px);
+	animation-name: hover;
+	animation-duration: 1.5s;
+	animation-delay: .3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 .outer {
 	display: table;
