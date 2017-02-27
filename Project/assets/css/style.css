@@ -3,7 +3,6 @@
     src: url('../fonts/Futura.ttf');
 }
 #main{
-	border:1px solid red;
 	text-align:center;
 }
 
@@ -42,6 +41,7 @@
 	animation-direction: alternate;
 }
 .outer {
+	background-color: #22046d;
 	display: table;
 	position: absolute;
 	height: 100%;
@@ -58,4 +58,14 @@
 	margin-left: auto;
 	margin-right: auto; 
 	width: 75%;
+}
+.vertical_halfopacity_inner {
+	border-radius: 25px;
+	color: #F75C03;
+	font-family: futura;
+	background-color: #000000;
+	opacity: 0.3;
+	margin-left: auto;
+	margin-right: auto; 
+	width: 45%;	
 }
