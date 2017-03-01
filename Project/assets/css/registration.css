@@ -1,6 +1,6 @@
 .field-wrap {
-  position:relative;
-  margin-bottom:40px;
+	position:relative;
+	margin-bottom:40px;
 }
 .form {
 	background: rgba(19, 35, 47, 0.9);
@@ -10,10 +10,55 @@
 	border-radius: 4px;
 	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
+.forgot {
+	margin-top: -20px;
+	text-align: right;
+}
+.tab-group {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 40px 0;
+}
+.tab-group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.tab-group li a {
+	display: block;
+	text-decoration: none;
+	padding: 15px;
+	background: rgba(237, 187, 85, 0.25);
+	color: #ffffff;
+	font-size: 20px;
+	float: left;
+	width: 50%;
+	text-align: center;
+	cursor: pointer;
+	-webkit-transition: .5s ease;
+	transition: .5s ease;
+}
+.tab-group li a:hover {
+	background: #F0A202;
+	color: #ffffff;
+}
+.tab-group .active a {
+	background: #edbb55;
+	color: #ffffff;
+}
+a {
+	text-decoration: none;
+	color: #edbb55;
+	-webkit-transition: .5s ease;
+	transition: .5s ease;
+}
+a:hover {
+	color: #F0A202;
+}
 label {
 	position: absolute;
 	-webkit-transform: translateY(6px);
-		  transform: translateY(6px);
+			transform: translateY(6px);
 	left: 13px;
 	color: rgba(255, 255, 255, 0.5);
 	-webkit-transition: all 0.25s ease;
@@ -24,7 +69,7 @@ label {
 }
 label.active {
 	-webkit-transform: translateY(50px);
-		  transform: translateY(50px);
+			transform: translateY(50px);
 	left: 2px;
 	font-size: 14px;
 }
