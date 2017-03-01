@@ -29,7 +29,7 @@
 	text-decoration: none;
 	padding: 15px;
 	background: rgba(237, 187, 85, 0.25);
-	color: #ffffff;
+	color: #adad8d;
 	font-size: 20px;
 	float: left;
 	width: 50%;
@@ -75,7 +75,7 @@ label.active {
 }
 
 label.highlight {
-	color: #ffffff;
+	color: #adad8d;
 }
 input, textarea {
 	font-size:22px;
