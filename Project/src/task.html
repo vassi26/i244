@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Day Of The Year 1/12/2017">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/registration.css">
+		<script src="../assets/js/timer.js"></script>
+		<script type="text/javascript">
+			var end = new Date('03/12/2017 11:59 PM');
+			var timer = setInterval(function () { showRemaining(end); }, 1000);
+		</script>
+		<title>01/12/2017</title>
+	</head>
+	<body>
+		<div class="form">
+			 <div class="tab-content">
+				<div id="register">
+					<h1>Task</h1>
+					<div class="task-content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat rutrum urna lacinia placerat. Quisque faucibus blandit nunc, eu sollicitudin magna euismod et. Curabitur neque arcu, cursus eu vehicula non, malesuada non eros. Aliquam vitae turpis tincidunt, dapibus odio id, malesuada ante. Sed ac aliquam magna, sit amet pharetra ex. In condimentum urna quis mollis posuere. Fusce at luctus felis, et porta tellus. Nunc sit amet quam ut ipsum placerat feugiat. Praesent gravida scelerisque tellus, sit amet fringilla justo. Maecenas in diam lacinia, luctus tortor dapibus, luctus felis. Quisque imperdiet vitae nunc et placerat. Duis luctus metus sit amet sollicitudin porta. Donec blandit nec nisi fringilla auctor.</p>
+					</div>
+					<div class="task-notes">
+						<p>NB! Library working hours are: M-F 10-18</p>
+						<p>Phone nr.: 55598029</p>
+					</div>
+					<div class="task-deadline">
+						<span id="counter"></span>
+					</div>
+					<form action="/" method="post">
+						<div class="field-wrap">
+							<label>Answer</label>
+							<input type="text" name="answer">
+						</div>
+						<button type="submit" class="button button-block">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src="../assets/js/registration.js"></script>
+	</body>
+</html>
