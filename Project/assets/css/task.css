@@ -1,47 +1,14 @@
-@font-face {
-	font-family: 'futura';
-	src: url('../fonts/Futura.ttf');
+p {
+	text-align: justify;
+	color: #edbb55;
+	font-weight: 150;
 }
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-html {
-	overflow-y: scroll; 
-}
-body {
-  background: #c1bdba;
-  font-family: 'Titillium Web', sans-serif;
-}
-h1 {
-  text-align: center;
-  color: #ffffff;
-  font-weight: 300;
-  margin: 0 0 40px;
-}
-#main{
-	text-align:center;
-}
-.block{
-	display:inline-block;
-	border:2px solid #F0A202;
-	border-radius: 25px;
-	margin:10px 10px;
-	width: 10px;
-	height: 10px;
-	overflow:hidden;
-	background-color: #2F004F;
-	color: #F75C03;
-	font-family: futura;
-	font-weight: bold;
-	font-size: 20pt;
-	text-align: center;
-	vertical-align: middle;
-	height: 70px;
-	width: 70px;
-	line-height: 70px;
+.task-content {
+
 	}
+.task-notes {
+	background-color: 
+}
 	/*
 	#FFC15E
 	#E56B70
@@ -64,14 +31,14 @@ h1 {
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-	background:  #edbb55;
+	background:	#edbb55;
 	color: #ffffff;
 	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 	-webkit-appearance: none;
 }
 .button:hover, .button:focus {
-  background:#F0A202;
+	background:#F0A202;
 }
 .button-block {
 	display: block;
