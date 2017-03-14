@@ -3,8 +3,15 @@ p {
 	color: #edbb55;
 	font-weight: 150;
 }
-form.wrapper {
-	width: 68%;
+@media all and (max-width: 400px) {
+	form.wrapper {
+		width: 100%;
+	}
+}
+@media all and (min-width: 600px) {
+	form.wrapper {
+		width: 68%;
+	}
 }
 embed {
 	margin: 0 30px 10px 0;
@@ -13,13 +20,13 @@ embed {
 span.time-left {
 }
 p.time-left {
-	padding-top: 5px;
+	padding: 5px 0 0 60px;
 	line-height: 48px;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
 	font-size: 18pt;
-	width: 65%;
-	float:left;
+	width: 65%;	
+    position: absolute;
 }
 .button {
 	font-family: futura;
@@ -40,18 +47,11 @@ p.time-left {
 .button-block {
 	display: block;
 	max-width: 49px;
-	float:right;
+	float: right;
 }
 .task-content {
 
-	}
-.task-notes {
-	background-color: 
 }
-	/*
-	#FFC15E
-	#E56B70
-	*/
 .form {
 	max-width: 900px;
 	min-width: 100px;
@@ -60,25 +60,37 @@ p.time-left {
 
 .field-wrap {
 	vertical-align: baseline;
-	width: 85%;
+	width: 75%;
 	position:relative;
 	float:left;
 }
 .wrapper {
+	position: relative;
 	padding-top: 10px;
 	width: 100%;
 	overflow: hidden;
-}
-.task-notes {
-	width: 30%;
-	float:left;
-}
-.task-map {
-	width: 68%;
-	float: right;
 }
 .task-deadline {
 	float: left;
 	width: 32%;
 	height: 50px;
+}
+@media all and (min-width: 600px) {
+	.task-notes {
+		width: 30%;
+		min-width: 150px;
+		float:left;
+	}
+	.task-map {
+		width: 68%;
+		float: right;
+	}
+}
+@media all and (max-width: 400px) {
+	.task-notes {
+		width: 100%;
+	}
+	.task-map {
+		width: 100%;
+	}
 }
