@@ -8,9 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="../assets/css/task.css">
 		<link rel="stylesheet" type="text/css" href="../assets/css/map.css">
 		<script src="../assets/js/timer.js"></script>
-		<script src="../assets/js/map.js"></script>
 		<script type="text/javascript">
-			var end = new Date('03/12/2017 11:59 PM');
+			var end = new Date('03/14/2017 11:59 PM');
 			var timer = setInterval(function () { showRemaining(end); }, 1000);
 		</script>
   </head>
@@ -24,22 +23,26 @@
 					<div class="task-content">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum volutpat rutrum urna lacinia placerat. Quisque faucibus blandit nunc, eu sollicitudin magna euismod et. Curabitur neque arcu, cursus eu vehicula non, malesuada non eros. Aliquam vitae turpis tincidunt, dapibus odio id, malesuada ante. Sed ac aliquam magna, sit amet pharetra ex. In condimentum urna quis mollis posuere. Fusce at luctus felis, et porta tellus. Nunc sit amet quam ut ipsum placerat feugiat. Praesent gravida scelerisque tellus, sit amet fringilla justo. Maecenas in diam lacinia, luctus tortor dapibus, luctus felis. Quisque imperdiet vitae nunc et placerat. Duis luctus metus sit amet sollicitudin porta. Donec blandit nec nisi fringilla auctor.</p>
 					</div>
-					<div id="map"></div>
-					<div class="task-notes">
-						<p>NB! Library working hours are: M-F 10-18</p>
-						<p>Phone nr.: 55598029</p>
-					</div>
-					<div class="task-deadline">
-						<p>Time left: <span id="counter"></span></p>
-						
-					</div>
-					<form action="/" method="post">
-						<div class="field-wrap">
-							<label>Answer</label>
-							<input type="text" name="answer">
+					<div class="wrapper">
+						<div class="task-notes">
+							<p>NB! Library working hours are: M-F 10-18</p>
+							<p>Phone nr.: 55598029</p>
 						</div>
-						<button type="submit" class="button button-block">Submit</button>
-					</form>
+						<div class="task-map" id="map"></div>
+					</div>
+					<div class="wrapper">					
+						<div class="task-deadline">
+							<embed type="image/svg+xml" src="../assets/svg/alarm.svg" />
+							<p class="time-left"><span id="counter"></span></p>						
+						</div>
+						<form class="wrapper" action="/" method="post">
+							<div class="field-wrap">
+								<label>Answer</label>
+								<input type="text" name="answer">
+							</div>
+							<button type="submit" class="button button-block">→</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -47,5 +50,6 @@
 		<script src="../assets/js/registration.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgQsuHcmNvOE1WWdbQFc6zvNgBVBYGKto&callback=initMap"
 		async defer></script>	
+		<script src="../assets/js/map.js"></script>
 	</body>
 </html>
