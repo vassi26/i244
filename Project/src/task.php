@@ -8,12 +8,14 @@
 		<link rel="stylesheet" type="text/css" href="../assets/css/task.css">
 		<link rel="stylesheet" type="text/css" href="../assets/css/map.css">
 		<script src="../assets/js/timer.js"></script>
+		<!--script src="../assets/js/answer.js"></script-->
 		<title>01/12/2017</title>
-  </head>
-  <body>	
-  
-  <?php include 'load_task.php'; ?>
-  		<script type="text/javascript">
+	</head>
+	<body>
+	<?php $task_id = $_GET['id'];
+	 include 'load_task.php';
+	?>
+		<script type="text/javascript">
 			var t = "<?php echo $end_time ?>".split(/[- :]/);
 			var end = new Date(t[0], t[1]-1, t[2], t[3], t[4], t[5]);
 			console.log(end);
@@ -43,10 +45,10 @@
 							<embed type="image/svg+xml" src="../assets/svg/alarm.svg" />
 							<p class="time-left"><span id="counter"></span></p>
 						</div>
-						<form class="wrapper" action="delete_user.php" method="post">
+						<form class="wrapper" action="answer_check.php?id=<?php echo $task_id ?>" method="post">
 							<div class="field-wrap">
 								<label>Answer</label>
-								<input type="text" name="answer">
+								<input type="text" name="answer" id="answer">
 							</div>
 							<button type="submit" class="button button-block">→</button>
 						</form>
