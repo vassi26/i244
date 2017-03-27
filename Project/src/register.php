@@ -38,14 +38,14 @@
 						<button type="submit" class="button button-block">Create</button>
 					</form>
 				</div>
-				<form action="upload.php" method="post" enctype="multipart/form-data">
+				<!--form action="upload.php" method="post" enctype="multipart/form-data">
 					<h1>Select image to upload:</h1>
 					<input type="file" name="fileToUpload" id="fileToUpload">
 					<input type="submit" value="Upload Image" name="submit">
-				</form>
+				</form-->
 				<div id="login" style="display: none;">
 					<h1>Welcome Back!</h1>
-					<form action="/" method="post">
+					<form action="login.php" method="post">
 						<div class="field-wrap">
 							<label>Username</label>
 							<input type="text" name="Username">
