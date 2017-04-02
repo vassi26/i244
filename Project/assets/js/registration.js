@@ -36,39 +36,37 @@ $('.tab a').on('click', function(e) {
 	$(target).fadeIn(600);
 
 });
-(function() {
-	
-	var PasswordToggler = function( element, field ) {
-		this.element = element;
-		this.field = field;
-		
-		this.toggle();	
-	};
-	
-	PasswordToggler.prototype = {
-		toggle: function() {
-			var self = this;
-			self.element.addEventListener( "change", function() {
-				if( self.element.checked ) {
-					self.field.setAttribute( "type", "text" );
-				} else {
-					self.field.setAttribute( "type", "password" );	
-				}
-            }, false);
-		}
-	};
-	
-	document.addEventListener( "DOMContentLoaded", function() {
-		var checkbox = document.querySelector( "#show-hide" ),
-			pwd = document.querySelector( "#pwd" ),
-			form = document.querySelector( "#login" );
-			
-			form.addEventListener( "submit", function( e ) {
-				e.preventDefault();
-			}, false);
-			
-			var toggler = new PasswordToggler( checkbox, pwd );
-		
-	});
-	
-})();
+(function($) {
+    $.fn.enterAsTab = function(options) {
+        var settings = $.extend({
+            'allowSubmit': false
+        }, options);
+        $(this).find('input, select, button').on("keydown", {localSettings: settings}, function(event) {
+            if (settings.allowSubmit) {
+                var type = $(this).attr("type");
+                if (type == "submit") {
+                    return true;
+                }
+            }
+            if (event.keyCode == 13) {
+                var inputs = $(this).parents("form").eq(0).find(":input:not(:disabled)");
+                var idx = inputs.index(this);
+                if (idx == inputs.length - 1) {
+                    idx = -1;
+                } else {
+                    inputs[idx + 1].focus();
+                }
+                try {
+                    inputs[idx + 1].select();
+                }
+                catch (err) {
+                   
+                }
+                event.preventDefault();
+                return false;
+            }
+        });
+        return this;
+    };
+})(jQuery);
+$("form").enterAsTab({ 'allowSubmit': true});
