@@ -18,12 +18,12 @@
 		$user_id = $row["User_ID"];
 		$title = $row["Title"];
 		$tasks = [];
-		//one element is lost... WHY?
+		mysqli_data_seek($result,0);
 		while($row = mysqli_fetch_array($result)["Task_ID"])
 		{
 			$tasks[] = $row;
 		}
     	mysqli_close($l);
-    	echo $user_id . " " . $title . " " . $tasks[0] . " " . $tasks[1] . " " . $tasks[2];
-
 	?>
+
+

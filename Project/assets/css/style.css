@@ -20,41 +20,6 @@ h1 {
   font-weight: 300;
   margin: 0 0 40px;
 }
-#main{
-	text-align:center;
-}
-.block{
-	display:inline-block;
-	border:2px solid #F0A202;
-	border-radius: 25px;
-	margin:10px 10px;
-	width: 10px;
-	height: 10px;
-	overflow:hidden;
-	background-color: #2F004F;
-	color: #F75C03;
-	font-family: futura;
-	font-weight: bold;
-	font-size: 20pt;
-	text-align: center;
-	vertical-align: middle;
-	height: 70px;
-	width: 70px;
-	line-height: 70px;
-	}
-	/*
-	#FFC15E
-	#E56B70
-	*/
-.block:hover {
-	transform: translateY(-6px);
-	animation-name: hover;
-	animation-duration: 1.5s;
-	animation-delay: .3s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
 .button {
 	border: 0;
 	outline: none;
@@ -76,25 +41,6 @@ h1 {
 .button-block {
 	display: block;
 	width: 100%;
-}
-.outer {
-	background-color: #22046d;
-	display: table;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-}
-
-.middle {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-.inner {
-	background-color: #061A40;
-	margin-left: auto;
-	margin-right: auto; 
-	width: 75%;
 }
 .field-wrap {
 	position:relative;
@@ -130,8 +76,8 @@ label {
 	font-size: 22px;
 }
 label.active {
-	-webkit-transform: translateY(50px);
-			transform: translateY(50px);
+	-webkit-transform: translateY(-20px);
+			transform: translateY(-20px);
 	left: 2px;
 	font-size: 14px;
 }

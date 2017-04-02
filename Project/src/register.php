@@ -17,7 +17,6 @@
 			 <div class="tab-content">
 				<div id="register">
 					<h1>Create new account</h1>
-					<span id="countdown_1"></span>
 					<form  action="create_user.php" method="post">
 						<div class="field-wrap">
 							<label>Username</label>

@@ -26,7 +26,7 @@
 		<div class="form">
 			 <div class="tab-content">
 				<div id="register">
-					<h1><?php echo $name ?></h1>
+					<h1><?php echo $title ?></h1>
 					<div class="task-content">
 						<p><?php echo $content ?></p>
 					</div>
