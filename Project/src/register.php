@@ -37,12 +37,12 @@
 						<button type="submit" class="button button-block">Create</button>
 					</form>
 				</div>
+				<div id="login" style="display: none;">
 				<!--form action="upload.php" method="post" enctype="multipart/form-data">
 					<h1>Select image to upload:</h1>
 					<input type="file" name="fileToUpload" id="fileToUpload">
 					<input type="submit" value="Upload Image" name="submit">
 				</form-->
-				<div id="login" style="display: none;">
 					<h1>Welcome Back!</h1>
 					<form action="login.php" method="post">
 						<div class="field-wrap">

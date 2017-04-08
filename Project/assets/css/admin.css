@@ -1,0 +1,19 @@
+.form {
+	max-width: 850px;
+}
+.double-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.double-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.double-row > div:last-child {
+  margin: 0;
+}
+textarea {
+	height: 200px;
+}

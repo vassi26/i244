@@ -5,6 +5,7 @@
 			<meta name="keywords" content="HTML,CSS,XML,JavaScript">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+			<link rel="stylesheet" type="text/css" href="../assets/css/admin.css">
 			<link rel="stylesheet" type="text/css" href="../assets/css/registration.css">
 			<title>Admin Panel</title>
 	</head>
@@ -18,21 +19,35 @@
 				<div id="create">
 					<h1>Create new Task</h1>
 					<form action="create_task.php" method="post">
-						<div class="field-wrap">
-							<label>Title</label>
-							<input type="text" name="Tile">
+						<div class="double-row">
+							<div class="field-wrap">
+								<label>Title</label>
+								<input type="text" name="Tile">
+							</div>
+							<div class="field-wrap">
+								<input type="datetime-local" name="EndTime">
+							</div>
 						</div>
 						<div class="field-wrap">
 							<label>Content</label>
 							<textarea type="text" name="Content"></textarea>
+						</div>
+						<div class="double-row">
+							<div class="field-wrap">
+								<label>Latitude</label>
+								<input type="number" min="-90.0" max="90.0" name="Lat">
+							</div>
+							<div class="field-wrap">
+								<label>Longitude</label>
+								<input type="number" min="-180.0" max="180.0" name="Long">
+							</div>
 						</div>
 						<div class="field-wrap">
 							<label>Notes</label>
 							<input type="text" name="Notes">
 						</div>
 						<div class="field-wrap">
-							<label>Valid until</label>
-							<input type="datetime-local" name="EndTime">
+							<input type="file" name="fileToUpload" id="fileToUpload">
 						</div>
 						<div class="field-wrap">
 							<label>Comment</label>

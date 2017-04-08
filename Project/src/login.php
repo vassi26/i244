@@ -24,6 +24,7 @@
 			$tasks[] = $row;
 		}
     	mysqli_close($l);
+    	include("board.php");
 	?>
 
 
