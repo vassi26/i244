@@ -2,19 +2,25 @@ function verify() {
  if(document.getElementById("answer").value=="") {
     alert("Please enter an answer.");
  } else {
-    alert("Looks good, sending email:"+task_id+"!");
+    //alert("Looks good, sending email:"+task_id+"!");
     var answer=$('#answer').val();
-    var  formData = "id="+task_id+"&answer="+answer;
-    $.ajax({
+    var response = $.ajax({
         url : "answer_check.php",
-        type: "POST",
-        data : formData,
-        success: function(data, textStatus, jqXHR)
+        type: "GET",
+        data : 
         {
-            //showModal();
+            id: task_id,
+            answer: answer
         },
-
-    });
-            //showModal();
+        dataType: 'json'
+    })
+    response
+        .success(function(data) {
+            showModal(data);
+    })
+        .fail(function(data) {
+            showModal(data);
+    })
+    ;
   }
 }

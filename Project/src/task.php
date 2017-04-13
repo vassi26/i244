@@ -9,7 +9,6 @@
 		<link rel="stylesheet" type="text/css" href="../assets/css/map.css">
 		<link rel="stylesheet" type="text/css" href="../assets/css/modal.css">
 		<script src="../assets/js/timer.js"></script>
-		<script src="../assets/js/answer.js"></script>
 		<title>01/12/2017</title>
 	</head>
 	<body>
@@ -46,29 +45,57 @@
 							<embed type="image/svg+xml" src="../assets/svg/alarm.svg" />
 							<p class="time-left"><span id="counter"></span></p>
 						</div>
-						<form class="wrapper" action="" method="post">
-							<div class="field-wrap">
-								<label>Answer</label>
-								<input type="text" name="answer" id="answer">
-							</div>
-							<button onClick="verify()"  class="button button-block">→</button>
-						</form>
+						<div class="field-wrap">
+							<label>Answer</label>
+							<input type="text" name="answer" id="answer">
+						</div>
+						<button onClick="verify()"  class="button button-block">→</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="myModal" class="modal">
+		<div id="correctModal" class="modal">
 			<div class="modal-content">
 			<div class="modal-header">
 				<span class="close">&times;</span>
-				<h2>Modal Header</h2>
+				<h2>Correct Answer</h2>
 			</div>
 			<div class="modal-body">
-				<p>Some text in the Modal Body</p>
-				<p>Some other text...</p>
+				<p>You did well, next task is available for You</p>
+				<p>Will You handle it?</p>
 			</div>
 			<div class="modal-footer">
-				<h3>Modal Footer</h3>
+				<h3>One step towards the mystery</h3>
+			</div>
+			</div>
+		</div>
+		<div id="wrongModal" class="modal">
+			<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2>Wrong answer</h2>
+			</div>
+			<div class="modal-body">
+				<p>What a pity!</p>
+				<p>Please try again, You still have some time left</p>
+			</div>
+			<div class="modal-footer">
+				<h3>Tragedy plus time equals humor</h3>
+			</div>
+			</div>
+		</div>
+		<div id="otherModal" class="modal">
+			<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<h2>Oops! This was unexpected...</h2>
+			</div>
+			<div class="modal-body">
+				<p>The only advice is to try a bit later</p>
+				<p>Sincerest apologies</p>
+			</div>
+			<div class="modal-footer">
+				<h3>May be You can look for a support contact</h3>
 			</div>
 			</div>
 		</div>
@@ -78,5 +105,6 @@
 		async defer></script>
 		<script src="../assets/js/map.js"></script>
 		<script src="../assets/js/modal.js"></script>
+		<script src="../assets/js/answer.js"></script>
 	</body>
 </html>
