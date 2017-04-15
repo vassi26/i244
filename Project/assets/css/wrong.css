@@ -13,8 +13,8 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 .modal-content {
+    background: #D00000;
     position: relative;
-    background-color: #fefefe;
     margin: auto;
     padding: 0;
     border: 1px solid #888;
@@ -48,14 +48,13 @@
 }
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+    color: rgb(6,6,105);
 }
-.modal-body {
-	padding: 2px 16px;
+.modal-body p {
+    padding: 2px 16px;
+    color: #060669 !important;
 }
 .modal-footer {
     padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+    color: rgb(6,6,105);
 }

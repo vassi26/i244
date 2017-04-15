@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 		<link rel="stylesheet" type="text/css" href="../assets/css/task.css">
 		<link rel="stylesheet" type="text/css" href="../assets/css/map.css">
-		<link rel="stylesheet" type="text/css" href="../assets/css/modal.css">
+		<link id="toChange" rel="stylesheet" type="text/css" href="../assets/css/other.css">
 		<script src="../assets/js/timer.js"></script>
 		<title>01/12/2017</title>
 	</head>
@@ -41,62 +41,66 @@
 						<div class="task-map" id="map"></div>
 					</div>
 					<div class="wrapper">
-						<div class="task-deadline">
-							<embed type="image/svg+xml" src="../assets/svg/alarm.svg" />
-							<p class="time-left"><span id="counter"></span></p>
+						<div class="inside-wrapper-left">
+							<div class="task-deadline">
+								<embed type="image/svg+xml" src="../assets/svg/alarm.svg" />
+								<p class="time-left"><span id="counter"></span></p>
+							</div>
 						</div>
-						<div class="field-wrap">
-							<label>Answer</label>
-							<input type="text" name="answer" id="answer">
+						<div class="inside-wrapper-right">
+							<div class="field-wrap">
+								<label>Answer</label>
+								<input type="text" name="answer" id="answer">
+							</div>
+							<button onClick="verify()"  class="button button-block">→</button>
 						</div>
-						<button onClick="verify()"  class="button button-block">→</button>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="correctModal" class="modal">
 			<div class="modal-content">
-			<div class="modal-header">
-				<span class="close">&times;</span>
-				<h2>Correct Answer</h2>
-			</div>
-			<div class="modal-body">
-				<p>You did well, next task is available for You</p>
-				<p>Will You handle it?</p>
-			</div>
-			<div class="modal-footer">
-				<h3>One step towards the mystery</h3>
-			</div>
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2>Correct Answer</h2>
+				</div>
+				<div class="modal-body">
+					<p>You did well, next task is available for You</p>
+					<p>Will You handle it?</p>
+				</div>
+				<div class="modal-footer">
+					<h3>One step towards the mystery</h3>
+				</div>
 			</div>
 		</div>
 		<div id="wrongModal" class="modal">
 			<div class="modal-content">
-			<div class="modal-header">
-				<span class="close">&times;</span>
-				<h2>Wrong answer</h2>
-			</div>
-			<div class="modal-body">
-				<p>What a pity!</p>
-				<p>Please try again, You still have some time left</p>
-			</div>
-			<div class="modal-footer">
-				<h3>Tragedy plus time equals humor</h3>
-			</div>
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2>Wrong answer</h2>
+				</div>
+				<div class="modal-body">
+					<p>What a pity!</p>
+					<p>Please try again, You still have some time left</p>
+				</div>
+				<div class="modal-footer">
+					<h3>Tragedy plus time equals humor</h3>
+				</div>
 			</div>
 		</div>
 		<div id="otherModal" class="modal">
 			<div class="modal-content">
-			<div class="modal-header">
-				<span class="close">&times;</span>
-				<h2>Oops! This was unexpected...</h2>
-			</div>
-			<div class="modal-body">
-				<p>The only advice is to try a bit later</p>
-				<p>Sincerest apologies</p>
-			</div>
-			<div class="modal-footer">
-				<h3>May be You can look for a support contact</h3>
-			</div>
+				<div class="modal-header">
+					<span class="close">&times;</span>
+					<h2>Oops! This was unexpected...</h2>
+				</div>
+				<div class="modal-body">
+					<p>The only advice is to try a bit later</p>
+					<p>Sincerest apologies</p>
+				</div>
+				<div class="modal-footer">
+					<h3>May be You can look for a support contact</h3>
+				</div>
 			</div>
 		</div>
 		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
