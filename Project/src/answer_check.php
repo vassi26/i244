@@ -1,14 +1,5 @@
 <?php
-$host = "localhost";
-$user = "test";
-$pass = "t3st3r123";
-$db = "test";
-$l = mysqli_connect($host, $user, $pass, $db);
-mysqli_query($l, "SET CHARACTER SET UTF8") or
-		die("Error, ei saa andmebaasi charsetti seatud");
-// echo "<script>console.log(\"Answer Check\")</script>";
-// $message = "Checking...";
-// echo "<script type='text/javascript'>alert('$message');</script>";
+include 'connect.php';
 $task_id = mysqli_real_escape_string($l, $_REQUEST['id']);
 $answer = mysqli_real_escape_string($l, $_REQUEST['answer']);
 $sqlcheck = "SELECT COUNT( * ) AS RESULT FROM i244_vmovko_answers WHERE (Task_ID = $task_id AND Code = '$answer')";
