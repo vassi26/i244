@@ -15,6 +15,7 @@
 	<body>
 	<?php $task_id = $_GET['id'];
 	 include 'load_task.php';
+	 include_once 'cookie.php';
 	?>
 		<script type="text/javascript">
 			var task_id=<?php echo $task_id ?>;

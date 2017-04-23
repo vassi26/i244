@@ -1,3 +1,7 @@
+<?php
+	include_once 'cookie.php';
+	session_start();
+?>
 <!DOCTYPE html>
 	<head>
 	  <meta charset="UTF-8">
@@ -8,6 +12,10 @@
 	  <title>Board of Tasks</title>
 	</head>
 	<body>
+	<?php
+		$tasks = [];
+		$tasks = $_SESSION["tasks"];
+	?>
 		<div class="outer" id="wrapper">
 			<div class="middle" id="header">
 				<div class="inner" id="main">				 

@@ -1,5 +1,5 @@
 <?php 
-include 'connect.php';
+include_once 'connect.php';
 
 $Username = mysqli_real_escape_string($l, $_REQUEST['Username']);
 $Email = mysqli_real_escape_string($l, $_REQUEST['Email']);

@@ -1,5 +1,5 @@
 <?php
-include 'connect.php';
+include_once 'connect.php';
 $task_id = mysqli_real_escape_string($l, $_REQUEST['id']);
 $answer = mysqli_real_escape_string($l, $_REQUEST['answer']);
 $sqlcheck = "SELECT COUNT( * ) AS RESULT FROM i244_vmovko_answers WHERE (Task_ID = $task_id AND Code = '$answer')";

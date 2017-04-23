@@ -1,5 +1,5 @@
 	<?php 
-	include 'connect.php';
+	include_once 'connect.php';
 	
 	$Title = mysqli_real_escape_string($l, $_REQUEST['Title']);
 	$Content = mysqli_real_escape_string($l, $_REQUEST['Content']);

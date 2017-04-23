@@ -1,5 +1,5 @@
 <?php 
-include 'connect.php';
+include_once 'connect.php';
 $sql = "SELECT Title, Content, Notes, End_Time FROM i244_vmovko_tasks WHERE Task_ID=$task_id;";
 $result = $l->query($sql);
 $row = $result->fetch_assoc();
