@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="../assets/css/map.css">
 		<link id="toChange" rel="stylesheet" type="text/css" href="../assets/css/other.css">
 		<script src="../assets/js/timer.js"></script>
+		<script src="../assets/js/button.js"></script>
 		<title>01/12/2017</title>
 	</head>
 	<body>
@@ -47,12 +48,13 @@
 								<p class="time-left"><span id="counter"></span></p>
 							</div>
 						</div>
-						<div class="inside-wrapper-right">
+						<div id="verify" class="inside-wrapper-right">
 							<div class="field-wrap">
 								<label>Answer</label>
 								<input type="text" name="answer" id="answer">
 							</div>
 							<button onClick="verify()"  class="button button-block">→</button>
+							<script>disableButton(end);</script>
 						</div>
 					</div>
 				</div>
