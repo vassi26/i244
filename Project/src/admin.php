@@ -7,6 +7,7 @@
 			<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 			<link rel="stylesheet" type="text/css" href="../assets/css/admin.css">
 			<link rel="stylesheet" type="text/css" href="../assets/css/registration.css">
+		<script src="../assets/js/search.js"></script>
 			<title>Admin Panel</title>
 	</head>
 	<body>
@@ -58,17 +59,23 @@
 				</div>
 				<div id="find" style="display: none;">
 					<h1>Find a user</h1>
-					<form action="/" method="post">
+					<div action="find_user.php" method="post">
 						<div class="field-wrap">
 							<label>Username</label>
-							<input type="text" name="Username">
+							<input type="text" id="Username">
 						</div>
 						<div class="field-wrap">
 							<label>Email</label>
-							<input type="email" name="Email">
+							<input type="email" id="Email">
 						</div>
-						<button type="submit" class="button button-block">Log In</button>
-					</form>
+						<button onClick="find()" class="button button-block">Find</button>
+					</div>
+					<div id="results" style="display: none;">
+					<p>TEST</p>
+						<?php foreach ($users as $user): ?>
+							<p><?=$user?></p>
+						<?php endforeach; ?>
+					</div>
 				</div>
 			</div>
 		</div>
