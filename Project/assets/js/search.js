@@ -16,7 +16,7 @@ function find() {
     })
     response
         .success(function(data) {
-            showResults();
+            showResults(data);
     })
         .fail(function(data) {
             hideResults();
@@ -24,9 +24,16 @@ function find() {
     ;
   }
 }
-function showResults() {
+function showResults(data) {
 	{   
-		document.getElementById("results").style.display = 'block';
+		var results = document.getElementById("results");
+		results.style.display = 'block';
+		data.forEach(function(user){
+			var node = document.createElement("p");
+			var textnode = document.createTextNode(user[0]);
+			node.appendChild(textnode);
+			results.appendChild(node);			
+		});
 	}
 }
 function hideResults() {

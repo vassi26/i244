@@ -71,10 +71,7 @@
 						<button onClick="find()" class="button button-block">Find</button>
 					</div>
 					<div id="results" style="display: none;">
-					<p>TEST</p>
-						<?php foreach ($users as $user): ?>
-							<p><?=$user?></p>
-						<?php endforeach; ?>
+						<p>TEST</p>
 					</div>
 				</div>
 			</div>
