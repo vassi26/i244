@@ -11,9 +11,14 @@
 	mysqli_data_seek($checkresult,0);
 	while($row = mysqli_fetch_array($checkresult))
 	{
+		$user_id = $row["User_ID"];
 		$user_name = $row["Username"];
 		$user_email = $row["Email"];
-		$user = array($user_name, $user_email);
+		$user_comment = $row["Comment"];
+		if($user_comment == null) {
+			$user_comment = '—';
+		}
+		$user = array($user_id, $user_name, $user_email, $user_comment);
 		$users[] = $user;
 	}
 	header('Content-Type: application/json');

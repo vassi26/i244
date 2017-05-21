@@ -66,13 +66,11 @@
 						</div>
 						<div class="field-wrap">
 							<label>Email</label>
-							<input type="email" id="Email">
+							<input type="text" id="Email">
 						</div>
 						<button onClick="find()" class="button button-block">Find</button>
 					</div>
-					<div id="results" style="display: none;">
-						<p>TEST</p>
-					</div>
+					<div id="results" style="display: none;"></div>
 				</div>
 			</div>
 		</div>

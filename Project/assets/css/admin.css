@@ -2,18 +2,27 @@
 	max-width: 850px;
 }
 .double-row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 .double-row > div {
-  float: left;
-  width: 48%;
-  margin-right: 4%;
+	float: left;
+	width: 48%;
+	margin-right: 4%;
 }
 .double-row > div:last-child {
-  margin: 0;
+	margin: 0;
 }
 textarea {
 	height: 200px;
+}
+table {
+	color: #ffffff;
+	margin-top: 35px;
+	width: 100%;
+}
+thead {
+	font-weight: bold;
+	color: #adad8d;
 }
