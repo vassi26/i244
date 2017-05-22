@@ -17,7 +17,7 @@
 			 <div class="tab-content">
 				<div id="register">
 					<h1>Create new account</h1>
-					<form  action="create_user.php" method="post">
+					<form id="registration" action="create_user.php" method="post">
 						<div class="field-wrap">
 							<label>Username</label>
 							<input type="text" name="Username">
@@ -34,17 +34,12 @@
 							<label>Referral code</label>
 							<input type="number" name="Code">
 						</div>
-						<button type="submit" class="button button-block">Create</button>
+						<button id="register-button" type="submit" class="button button-block">Create</button>
 					</form>
 				</div>
 				<div id="login" style="display: none;">
-				<!--form action="upload.php" method="post" enctype="multipart/form-data">
-					<h1>Select image to upload:</h1>
-					<input type="file" name="fileToUpload" id="fileToUpload">
-					<input type="submit" value="Upload Image" name="submit">
-				</form-->
 					<h1>Welcome Back!</h1>
-					<form action="login.php" method="post">
+					<form id="log-in" action="login.php" method="post">
 						<div class="field-wrap">
 							<label>Username</label>
 							<input type="text" name="Username">
@@ -54,13 +49,13 @@
 							<input type="password" name="Password">
 						</div>
 						<p class="forgot"><a href="#">Forgot Password?</a></p>
-						<button type="submit" class="button button-block">Log In</button>
+						<button id="login-button" type="submit" class="button button-block">Log In</button>
 					</form>
 				</div>
 			</div>
 		</div>
 			<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 			<script src="../assets/js/registration.js"></script>
-			<!-- <?php phpinfo() ?> -->
+			<script src="../assets/js/input.js"></script>
 	</body>
 </html>

@@ -1,7 +1,10 @@
 function find() {
- if(document.getElementById("Username").value=="") {
+ if(document.getElementById("Username").value=="" && document.getElementById("Email").value=="") {
 	alert("Please enter a Username or Email.");
- } else {
+ } else if (check() == true) {
+ 	alert("Username or Email contain forbidden symbols : ; \" ' / \\ |");
+ }
+ else {
 	var username=$('#Username').val();
 	var email=$('#Email').val();
 	var response = $.ajax({

@@ -7,7 +7,7 @@
 			<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 			<link rel="stylesheet" type="text/css" href="../assets/css/admin.css">
 			<link rel="stylesheet" type="text/css" href="../assets/css/registration.css">
-		<script src="../assets/js/search.js"></script>
+			<script src="../assets/js/search.js"></script>
 			<title>Admin Panel</title>
 	</head>
 	<body>
@@ -76,5 +76,6 @@
 		</div>
 			<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 			<script src="../assets/js/registration.js"></script>
+			<script src="../assets/js/input.js"></script>
 	</body>
 </html>

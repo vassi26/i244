@@ -70,3 +70,8 @@ $('.tab a').on('click', function(e) {
     };
 })(jQuery);
 $("form").enterAsTab({ 'allowSubmit': true});
+$("#register-button").click(function() {
+    if( !$("#registration input:empty").length == 0 ) {
+        alert("Please fill all fields.");
+    }
+});
