@@ -20,19 +20,19 @@
 					<form id="registration" action="create_user.php" method="post">
 						<div class="field-wrap">
 							<label>Username</label>
-							<input type="text" name="Username">
+							<input type="text" name="Username" class="required">
 						</div>
 						<div class="field-wrap">
 							<label>Email</label>
-							<input type="email" name="Email">
+							<input type="email" name="Email" class="required">
 						</div>
 						<div class="field-wrap">
 							<label>Password</label>
-							<input type="password" name="Password">
+							<input type="password" name="Password" class="required">
 						</div>
 						<div class="field-wrap">
 							<label>Referral code</label>
-							<input type="number" name="Code">
+							<input type="text" name="Code">
 						</div>
 						<button id="register-button" type="submit" class="button button-block">Create</button>
 					</form>

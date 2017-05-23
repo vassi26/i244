@@ -3,9 +3,8 @@
 	include_once 'session.php';
 	$Username = mysqli_real_escape_string($l, $_REQUEST['Username']);
 	$Password = mysqli_real_escape_string($l, $_REQUEST['Password']);
-	$sql = "SELECT u.User_ID, r.Title, ut.Task_ID FROM i244_vmovko_users u, i244_vmovko_roles r, i244_vmovko_user_roles ur, i244_vmovko_user_tasks ut".
-		" WHERE u.Username='$Username' and u.Password='$Password' and ur.User_Role_ID = u.User_Role_ID".
-		" and r.Role_ID = ur.Role_ID and ut.User_ID = u.User_ID";
+	$sql = "SELECT u.User_ID, r.Title, ut.Task_ID FROM i244_vmovko_users u, i244_vmovko_roles r, i244_vmovko_user_tasks ut".
+		" WHERE u.Username='$Username' and u.Password='$Password' and r.Role_ID = u.Role_ID and ut.User_ID = u.User_ID";
 	$result = $l->query($sql);
 	$row = $result->fetch_assoc();
 	$user_id = $row["User_ID"];
