@@ -85,6 +85,13 @@ label.active {
 label.highlight {
 	color: #adad8d;
 }
+button[type=button]{
+	position: absolute;
+    left: 90%;
+    top: 15%;
+    height: 20px;
+    width: 5%;
+}
 input, textarea {
 	font-size:22px;
 	display:block;

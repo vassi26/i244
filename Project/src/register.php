@@ -6,6 +6,7 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 			<link rel="stylesheet" type="text/css" href="../assets/css/registration.css">
+			<script src="../assets/js/toggle.js"></script>
 			<title>Registration</title>
 	</head>
 	<body>
@@ -28,7 +29,8 @@
 						</div>
 						<div class="field-wrap">
 							<label>Password</label>
-							<input type="password" name="Password" class="required">
+							<input type="password" name="Password" class="required" id="passwordReg">
+							<button type="button" id="showReg" style="background:url(../assets/img/locked.png)no-repeat;cursor:pointer;border:none;background-size:20px;" onclick="toggleVisible(this, document.getElementById('passwordReg'))">
 						</div>
 						<div class="field-wrap">
 							<label>Referral code</label>
@@ -46,7 +48,8 @@
 						</div>
 						<div class="field-wrap">
 							<label>Password</label>
-							<input type="password" name="Password">
+							<input type="password" id="passwordLog" name="Password">
+							<button type="button" id="showLog" style="background:url(../assets/img/locked.png)no-repeat;cursor:pointer;border:none;background-size:20px;" onclick="toggleVisible(this, document.getElementById('passwordLog'))">
 						</div>
 						<p class="forgot"><a href="#">Forgot Password?</a></p>
 						<button id="login-button" type="submit" class="button button-block">Log In</button>

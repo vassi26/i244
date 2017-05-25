@@ -21,7 +21,11 @@
 	login($user_id);
 	setTasks($tasks);
 	mysqli_close($l);
-	header('Location: /~vmovko/i244/project/src/board.php');
+	if ($title == 'Admin') {
+		header('Location: /~vmovko/i244/project/src/admin.php');
+	} else {
+		header('Location: /~vmovko/i244/project/src/board.php');
+	}
 ?>
 
 
