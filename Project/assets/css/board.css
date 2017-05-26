@@ -1,25 +1,29 @@
-
+body {
+	background: #c1bdba;
+	margin: 45px 10px;
+	height: 500px;
+}
+img {
+	display: block;
+	margin: 15px 10px 10px 10px;
+}
 #main{
 	text-align:center;
 }
 .block{
 	display:inline-block;
 	border:2px solid #F0A202;
-	border-radius: 25px;
 	margin:10px 10px;
-	width: 10px;
-	height: 10px;
+	width: 120px;
+	height: 170px;
 	overflow:hidden;
-	background-color: #2F004F;
-	color: #F75C03;
+	color: #F0A202;
 	font-family: futura;
 	font-weight: bold;
 	font-size: 20pt;
 	text-align: center;
 	vertical-align: middle;
-	height: 70px;
-	width: 70px;
-	line-height: 70px;
+	line-height: 170px;
 	}
 	/*
 	#FFC15E
@@ -35,11 +39,13 @@
 	animation-direction: alternate;
 }
 .outer {
-	background-color: #22046d;
+	background-color: rgba(19, 35, 47, 0.9);
 	display: table;
-	position: absolute;
 	height: 100%;
 	width: 100%;
+	padding: 25px 0px;
+	border-radius: 4px;
+	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 
 .middle {
@@ -48,8 +54,6 @@
 }
 
 .inner {
-	background-color: #061A40;
 	margin-left: auto;
-	margin-right: auto; 
-	width: 75%;
+	margin-right: auto;
 }

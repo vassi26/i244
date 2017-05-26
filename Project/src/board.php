@@ -20,7 +20,9 @@
 			<div class="middle" id="header">
 				<div class="inner" id="main">				 
 					<?php foreach ($tasks as $row): ?>
-						<a class="block" href="task.php?id=<?=$row?>"><?=$row?></a>
+						<a class="block" href="task.php?id=<?=$row?>">
+							<?=$row?>
+						</a>
 					<?php endforeach; ?>
 				</div>
 			</div>
