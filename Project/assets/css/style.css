@@ -20,6 +20,10 @@ h1 {
   font-weight: 300;
   margin: 0 0 40px;
 }
+p {
+	text-align: justify;
+	color: #edbb55;
+}
 .button {
 	border: 0;
 	outline: none;
@@ -72,7 +76,6 @@ label {
 	-webkit-transition: all 0.25s ease;
 	transition: all 0.25s ease;
 	-webkit-backface-visibility: hidden;
-	pointer-events: none;
 	font-size: 22px;
 }
 label.active {

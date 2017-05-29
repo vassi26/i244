@@ -1,8 +1,3 @@
-p {
-	text-align: justify;
-	color: #edbb55;
-	font-weight: 150;
-}
 @media all and (max-width: 881px) {
 	.inside-wrapper-left, .inside-wrapper-right {
 		width: 100%;

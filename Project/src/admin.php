@@ -31,7 +31,7 @@
 						</div>
 						<div class="field-wrap">
 							<label>Content</label>
-							<textarea type="text" name="Content"></textarea>
+							<textarea name="Content"></textarea>
 						</div>
 						<div class="double-row">
 							<div class="field-wrap">
@@ -59,7 +59,7 @@
 				</div>
 				<div id="find" style="display: none;">
 					<h1>Find a user</h1>
-					<div action="find_user.php" method="post">
+					<div>
 						<div class="field-wrap">
 							<label>Username</label>
 							<input type="text" id="Username">

@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 	<head>
 	  <meta charset="UTF-8">
-	  <meta name="description" content="Day Of The Year 1/12/2017">
+	  <meta name="description" content="Task Board">
 	  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <link rel="stylesheet" type="text/css" href="../assets/css/board.css">

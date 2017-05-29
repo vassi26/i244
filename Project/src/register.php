@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<head>
 			<meta charset="UTF-8">
-			<meta name="description" content="Day Of The Year 1/12/2017">
+			<meta name="description" content="Registration">
 			<meta name="keywords" content="HTML,CSS,XML,JavaScript">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
@@ -30,7 +30,7 @@
 						<div class="field-wrap">
 							<label>Password</label>
 							<input type="password" name="Password" class="required" id="passwordReg">
-							<button type="button" id="showReg" style="background:url(../assets/img/locked.png)no-repeat;cursor:pointer;border:none;background-size:20px;" onclick="toggleVisible(this, document.getElementById('passwordReg'))">
+							<button type="button" id="showReg" style="background:url(../assets/img/locked.png)no-repeat;cursor:pointer;border:none;background-size:20px;" onclick="toggleVisible(this, document.getElementById('passwordReg'))"></button>
 						</div>
 						<div class="field-wrap">
 							<label>Referral code</label>
@@ -49,7 +49,7 @@
 						<div class="field-wrap">
 							<label>Password</label>
 							<input type="password" id="passwordLog" name="Password">
-							<button type="button" id="showLog" style="background:url(../assets/img/locked.png)no-repeat;cursor:pointer;border:none;background-size:20px;" onclick="toggleVisible(this, document.getElementById('passwordLog'))">
+							<button type="button" id="showLog" style="background:url(../assets/img/locked.png)no-repeat;cursor:pointer;border:none;background-size:20px;" onclick="toggleVisible(this, document.getElementById('passwordLog'))"></button>
 						</div>
 						<p class="forgot"><a href="#">Forgot Password?</a></p>
 						<button id="login-button" type="submit" class="button button-block">Log In</button>
