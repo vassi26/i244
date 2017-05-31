@@ -1,6 +1,6 @@
 function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-	center: {lat: 59.443137, lng: 24.756124},
+	var map = new google.maps.Map(document.getElementById('map'), {
+	center: {lat: lat, lng: lng},
 	zoom: 12,
 	styles:
 	[
@@ -209,9 +209,9 @@ function initMap() {
 		]
 	}
 ]
-  });  
+	});
 
-	  	var iconLocation = {
+			var iconLocation = {
 			path: "M-10,0a10,10 0 1,0 20,0a10,10 0 1,0 -20,0",
 			fillColor: '#27d2f4',
 			fillOpacity: .6,
@@ -228,12 +228,12 @@ function initMap() {
 			scale: 1
 		}
 
-  if (navigator.geolocation) {
+	if (navigator.geolocation) {
 	navigator.geolocation.getCurrentPosition(function(position) {
 		var currentPos = {
 		lat: position.coords.latitude,
 		lng: position.coords.longitude
-	  	};
+			};
 		var currentLocation = new google.maps.Marker({ 
 			map: map,
 			position: currentPos,
@@ -242,12 +242,12 @@ function initMap() {
 			shadow: null,
 			zIndex: 999
 		});
-	  	map.setCenter(pos);
-	}); 
-  }
+			map.setCenter(pos);
+	});
+	}
 	var targetPos = {
-		lat: 59.446322,
-		lng: 24.753576
+		lat: lat,
+		lng: lng
 	  	};
 	var target = new google.maps.Marker({ 
 		map: map,

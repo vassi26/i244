@@ -22,6 +22,9 @@
 			var t = "<?php echo $end_time ?>".split(/[- :]/);
 			var end = new Date(t[0], t[1]-1, t[2], t[3], t[4], t[5]);
 			var timer = setInterval(function () { showRemaining(end); }, 1000);
+			var lat = parseFloat(<?php echo $lng;?>);
+			var lng = parseFloat(<?php echo $lat;?>);
+			// "parseFloat('<?php echo $lat;?>')"
 		</script>
 
 		<div class="form">
@@ -68,8 +71,8 @@
 					<h2>Correct Answer</h2>
 				</div>
 				<div class="modal-body">
-					<p>You did well, next task is available for You</p>
-					<p>Will You handle it?</p>
+					<p>You did well, here's Your prize:</p>
+					<p><?php echo $success;?></p>
 				</div>
 				<div class="modal-footer">
 					<h3>One step towards the mystery</h3>
