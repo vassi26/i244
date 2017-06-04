@@ -1,0 +1,23 @@
+#comments  table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#comments  th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+#comments  tr:nth-child(even){background-color: #f9fcd5}
+
+#comments  th {
+    background-color: #e2f2fd;
+}
+.outer {
+	display: table;
+	height: 100%;
+	width: 100%;
+	padding: 0 20%;
+	border-radius: 4px;
+	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
